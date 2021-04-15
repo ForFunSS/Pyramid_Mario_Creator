@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="ss.css">
+</head>
+
+<body>
+  <container class="main_Body">
+    <div id="pyramid_footer"> Pyramid Slide </div>
+
+
+    <div class="control_panel">
+      <div class="panel">
+        <select name="symbol" id="symbol_selector" oninput="showVal_2();"
+        onchange="showVal();">
+          <option value="a">@</option>
+          <option value="s">#</option>
+          <option value="doll">$</option>
+          <option value="x">X</option>
+        </select>
+        <label for="how_big_p">how big you want to create a pyramid?</label>
+        <input type="range" name="how_big_p" id="" min="0" max="14" id="how_Big" oninput="showVal_2(this.value);"
+          onchange="showVal(this.value);">
+        <span id="result"> </span>
+      </div>
+
+      <div class="visual_panel">
+        <div id="pyramid">
+          <div id="construction">
+            <div class="" id="parent">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="mario.js"></script>
+  </container>
+</body>
+
+﻿
+
+</html>
