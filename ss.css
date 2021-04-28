@@ -5,7 +5,7 @@
 
 }
 
-#pyramid_footer{
+.pyramid_footer{
   display: inline-block;
   width: 500px;
   height: 60px;
@@ -41,7 +41,7 @@
   border-radius: 20px;
 }
 
-#pyramid {
+.pyramid {
     font-family: "Courier New", monospace;
     line-height: 0;
     display: flex;

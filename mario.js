@@ -1,20 +1,16 @@
 
+$("#how_Big").click(function(){
+    showVal_2(this.value);
+})
+
+$("#how_Big").change(function(){
+    showVal(this.value);
+})
 
 
-
-// function pizdec(){
-//     var input = document.getElementsById('how_Big');
-//     document.getElementById('result').innerHTML = input.valueAsNumber;
-//     alert("darow!");
-// }
-
-// edit_input.addEventListener("click",function(){
-//     let d = document.getElementsByName('ow_big_p').values;
-//     document.getElementsByClassName("how_pyr").innerHTML = " tototo";
-// })
 
 function showVal_2(newVal){
-    document.getElementById("result").innerHTML=newVal;
+    $(".result").html(newVal);
 }
 
 function showVal(newVal){
@@ -23,19 +19,20 @@ function showVal(newVal){
 }
 
 function cleanDiv(){
-    document.getElementById('parent').innerHTML = '';
+    $(".parent").html("");
 }
 
 
 function printPyramid(height) {
-    // console.log(parseInt(document.getElementById("how_Big").value));
+ 
     cleanDiv();
-    var select_item = document.getElementById("symbol_selector").value;
+    var select_item = $("#symbol_selector").val();
     height = parseInt(height);
 
     for (let i = 0; i < height; i++) {
-        // let bricks ="";
-        let parent = document.querySelector('#parent');
+    
+        let parent = document.querySelector('.parent');
+        // let parent2 = $(".parent");
         
 
         for (let j = height + 1; j > 0; j--) {
@@ -45,6 +42,9 @@ function printPyramid(height) {
             p.innerHTML = select_item;
             p.classList = 'pyra';
             parent.appendChild(p);
+
+            // let p = $('<p class="pyra">');
+            // parent2.html(p);
                 
             } else {
             
@@ -65,40 +65,4 @@ function printPyramid(height) {
         
     }  
 }
-
-
-// no work
-// function printPyramid(height) {
-//     height.self = height;
-//     den = "#", kw = " ";
-//     for(let i = 1; i < height + 1; i++){
-//         let k = -1, ke = "";
-//         while(k < i)
-//         {
-//             ke += den;
-//             k++
-//         }
-
-//         kw = "";
-//         if (k !== 5){
-//             kw = " ";
-//             for (let j = height + 1; j > 0  ; j--){
-//                 kw += kw;
-//                 // console.log(kw);
-//             }
-//         } else {
-            
-//         }
-
-//         console.log(kw + ke);
-//         ke = "";
-//     }
-// }
-
-// const button = document.querySelector("button");
-// button.addEventListener('click', function once() {
-//     printPyramid(10);
-//     console.log('Done!');
-//     button.removeEventListener('click', once);
-// });
 

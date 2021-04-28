@@ -3,11 +3,13 @@
 
 <head>
   <link rel="stylesheet" href="ss.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
 </head>
 
 <body>
   <container class="main_Body">
-    <div id="pyramid_footer"> Pyramid Slide </div>
+    <div class = "pyramid_footer"> Pyramid Slide </div>
 
 
     <div class="control_panel">
@@ -20,15 +22,16 @@
           <option value="x">X</option>
         </select>
         <label for="how_big_p">how big you want to create a pyramid?</label>
-        <input type="range" name="how_big_p" id="" min="0" max="14" id="how_Big" oninput="showVal_2(this.value);"
-          onchange="showVal(this.value);">
-        <span id="result"> </span>
+        <input type="range" name="how_big_p" min="0" max="14" id="how_Big" >
+        <!-- oninput="showVal_2(this.value);"
+          onchange="showVal(this.value);" -->
+        <span class="result"> </span>
       </div>
 
       <div class="visual_panel">
-        <div id="pyramid">
-          <div id="construction">
-            <div class="" id="parent">
+        <div class ="pyramid">
+          <div id ="construction">
+            <div class="parent" id="parent">
 
             </div>
           </div>
